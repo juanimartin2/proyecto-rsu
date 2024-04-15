@@ -1,1 +1,41 @@
+
+
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main-color: #00492C;
+    --hoover-main-color: #00824e;
+    --sec-ext-color: #781A1A;
+    --hoover-sec-ext-color: #cf3838;
+    --facu-derecho-color: #781A1A;
+    --hoover-facu-derecho-color: #dd3d3d;
+    --facu-econom-color: #1B3B82;
+    --facu-econom-color: #3568d6;
+    --facu-medicas-color: #2A8B22;
+    --hoover-facu-medicas-color: #67bb5f;
+    --facu-educ-color: #DE6E00;
+    --hoover-facu-educ-color: #ff9c39;
+    --facu-filo-color: #E31E24;
+    --hoover-facu-filo-color: #f3656a;
+    --facu-alim-color: #07858A;
+    --hoover-facu-alim-color: #23c3c9;
+    --esc-seg-color: #021233;
+    --hoover-esc-seg-color: #4669af;
+    --esc-form-color: #FEED00;
+    --hoover-esc-form-color: #faf6bb;
+  }
+
+  
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0; 
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }

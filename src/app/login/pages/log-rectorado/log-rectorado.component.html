@@ -1,0 +1,11 @@
+
+<div class="login-full-container">
+   <div class="login-container">
+      <img src="..\assets\iconos\logo2-ucc.png" alt="Logo UCCuyo">
+      <h2>Rectorado</h2>
+         <input type="email" id="email" name="email" #email placeholder="Correo electrónico" required>
+         <input type="password" id="password" name="password" #password placeholder="Contraseña" required>
+         <button (click)="logIn(email.value, password.value)" type="submit">Entrar</button>
+      <button routerLink="../" class="marginBack">Volver a sección de Facultades</button>  
+   </div>
+</div>
