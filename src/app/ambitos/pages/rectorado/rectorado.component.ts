@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class RectoradoComponent {
 
+  ngOnInit(): void {
+    console.log("Entro ambitos/rectorado");
+   }
+
 }

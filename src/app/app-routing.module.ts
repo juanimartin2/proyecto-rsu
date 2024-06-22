@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BienvenidaComponent } from './app-home/pages/bienvenida/bienvenida.component';
 import { Error404Component } from './shared/error404/error404.component';
-
 
 
 const routes: Routes = [
   {
     path:'',
-    redirectTo: 'login',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path:'home',
+    component: BienvenidaComponent,
     pathMatch: 'full'
   },
   {
@@ -17,10 +22,6 @@ const routes: Routes = [
   {
     path: "ambitos",
     loadChildren: () => import('./ambitos/ambitos.module'). then (m => m.AmbitosModule)
-  },
-  {
-    path: "facultades",
-    loadChildren: () => import('./facultades/facultades.module'). then (m => m.FacultadesModule)
   },
   { 
     path: '404',

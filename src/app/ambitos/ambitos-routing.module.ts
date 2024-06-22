@@ -12,10 +12,6 @@ const routes: Routes = [
         { 
           path:'rectorado',
           component: RectoradoComponent
-        },
-        { 
-          path: '**',
-          redirectTo: 'rectorado'
         }
     ],
     }
