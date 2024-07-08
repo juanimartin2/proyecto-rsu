@@ -10,7 +10,6 @@ export class AmbitHomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-   console.log("Entro Ambitos Home");
   }
 
 }

@@ -7,8 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AmbitosModule } from './ambitos/ambitos.module';
 import { SharedModule } from './shared/shared.module';
 import { LoginModule } from './login/login.module';
-import { RouterLink } from '@angular/router';
-import { AppHomeModule } from './app-home/app-home.module';
+import { RouterLink, RouterModule } from '@angular/router';
 
 //imports firebase
 import { environment } from '../environments/environment';
@@ -28,9 +27,9 @@ import { NavComponent } from './shared/nav/nav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     RouterLink,
     BrowserAnimationsModule,
-    AppHomeModule,
     AmbitosModule,
     SharedModule,
     LoginModule,

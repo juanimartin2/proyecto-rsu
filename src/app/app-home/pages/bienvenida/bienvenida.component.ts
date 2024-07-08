@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AppHomeRoutingModule } from '../../app-home-routing.module';
 import { RouterModule } from '@angular/router';
 import { OfficeSvgComponent } from '../../../shared/office-svg/office-svg.component';
 
@@ -8,7 +7,6 @@ import { OfficeSvgComponent } from '../../../shared/office-svg/office-svg.compon
   standalone: true,
   imports: [
     RouterModule,
-    AppHomeRoutingModule,
     OfficeSvgComponent
   ],
   templateUrl: './bienvenida.component.html',

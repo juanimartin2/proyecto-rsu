@@ -12,9 +12,9 @@ export class LogRectoradoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+/*
   logIn(email : string, password : string){
     this.userService.logInMail(email, password);
   }
-  
+*/ 
 }

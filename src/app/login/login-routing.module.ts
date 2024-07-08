@@ -18,11 +18,6 @@ const routes: Routes = [
       { 
         path: 'rectorado',
         component: LogRectoradoComponent
-      },
-      { 
-        path: '**',
-        redirectTo: '',
-        pathMatch: 'full'
       }
     ]
   }
