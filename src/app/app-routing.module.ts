@@ -17,11 +17,11 @@ const routes: Routes = [
   },
   {
     path: "login",
-    loadChildren: () => import('./login/login.module'). then (m => m.LoginModule)
+    loadChildren: () => import('./login/login-routing.module'). then (m => m.LoginRoutingModule)
   },
   {
     path: "ambitos",
-    loadChildren: () => import('./ambitos/ambitos.module'). then (m => m.AmbitosModule)
+    loadChildren: () => import('./ambitos/ambitos-routing.module'). then (m => m.AmbitosRoutingModule)
   },
   { 
     path: '404',

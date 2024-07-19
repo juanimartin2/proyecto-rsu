@@ -8,8 +8,8 @@ describe('AmbitHomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AmbitHomeComponent ]
-    })
+    imports: [AmbitHomeComponent]
+})
     .compileComponents();
   });
 

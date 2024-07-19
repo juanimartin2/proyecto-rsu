@@ -4,10 +4,12 @@ import { HomeComponent } from './pages/home/home.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { LogRectoradoComponent } from './pages/log-rectorado/log-rectorado.component';
 
+
 const routes: Routes = [
   {
     path:'',
     component: HomeComponent,
+    title:"Ingresar al sistema - RSU",
     pathMatch: 'full',
     children:[
       { 

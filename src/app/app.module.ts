@@ -4,9 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AmbitosModule } from './ambitos/ambitos.module';
-import { SharedModule } from './shared/shared.module';
-import { LoginModule } from './login/login.module';
+
 import { RouterLink, RouterModule } from '@angular/router';
 
 //imports firebase
@@ -30,16 +28,13 @@ import { NavComponent } from './shared/nav/nav.component';
     RouterModule,
     RouterLink,
     BrowserAnimationsModule,
-    AmbitosModule,
-    SharedModule,
-    LoginModule,
     NavComponent,
     AngularFireModule,
-    provideFirebaseApp(() => initializeApp({"projectId":"rsu-proyect","appId":"1:43704865178:web:2a96ec3a6f9ee641906a23","databaseURL":"https://rsu-proyect-default-rtdb.firebaseio.com","storageBucket":"rsu-proyect.appspot.com","apiKey":"AIzaSyCSk15rVx0PDGb8c2XTTopudjtxPZBNT7c","authDomain":"rsu-proyect.firebaseapp.com","messagingSenderId":"43704865178","measurementId":"G-QSNFLVB5R7"})),
+    provideFirebaseApp(() => initializeApp({ "projectId": "rsu-proyect", "appId": "1:43704865178:web:2a96ec3a6f9ee641906a23", "databaseURL": "https://rsu-proyect-default-rtdb.firebaseio.com", "storageBucket": "rsu-proyect.appspot.com", "apiKey": "AIzaSyCSk15rVx0PDGb8c2XTTopudjtxPZBNT7c", "authDomain": "rsu-proyect.firebaseapp.com", "messagingSenderId": "43704865178", "measurementId": "G-QSNFLVB5R7" })),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideDatabase(() => getDatabase())
-  ],
+],
   providers: [
     {provide: FIREBASE_OPTIONS, useValue: environment.firebase}
   ],
